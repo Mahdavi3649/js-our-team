@@ -1,7 +1,13 @@
 body{
     background-color: beige;
+
 }
 
 .cards {
     background-color: white;
+}
+
+h4,
+h2{
+    font-family: "Vidaloka", serif;
 }

@@ -34,7 +34,7 @@ const team = [
       image: 'barbara-ramos-graphic-designer.jpg',
     },
   ];
-  console.log(team);
+  //console.log(team);
 
   for (let i = 0; i < team.length; i++) {
       const person = team[i];
@@ -56,7 +56,7 @@ organizzare i singoli membri in card/schede
 
 // selezionare l'elemento della dom dove voglio stampare le informazioni
 const personElement = document.querySelector(".row")
-    console.log(personElement)
+    //console.log(personElement)
 
 for (let i = 0; i < team.length; i++) {
     const person = team[i];
@@ -68,13 +68,13 @@ for (let i = 0; i < team.length; i++) {
         <img src="./assets/img/${person.image}" width="355px">
     </div>
     <div class="card-text text-center p-4">
-        <h4>${person.name}</h4>
+        <h4 class="cardname">${person.name}</h4>
         <h6>${person.role}</h6>
     </div>
 </div>
     </div>
     `;
-    console.log(personCard);
+    //console.log(personCard);
 
     personElement.insertAdjacentHTML("beforeend", personCard);
 
