@@ -68,7 +68,7 @@ for (let i = 0; i < team.length; i++) {
         <img src="./assets/img/${person.image}" width="355px">
     </div>
     <div class="card-text text-center p-4">
-        <h4 class="cardname">${person.name}</h4>
+        <h4>${person.name}</h4>
         <h6>${person.role}</h6>
     </div>
 </div>
