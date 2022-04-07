@@ -35,7 +35,6 @@ const team = [
       image: 'barbara-ramos-graphic-designer.jpg',
     },
   ];
-
   console.log(team);
 
   for (let i = 0; i < team.length; i++) {
