@@ -1,5 +1,4 @@
 
-
 /* MILESTONE 1 :
 stampare su console le informazioni di nome, ruolo e la stringa della foto */
 
@@ -46,14 +45,14 @@ const team = [
   }
 
  /*  MILESTONE 2 
- (se ce la fai falla entro le 18 altrimenti puoi consegnare anche dopo le 18 - easy):
 stampare le stesse informazioni su DOM sottoforma di stringhe
+
 BONUS 1 
-(solo se non sei giá frustrato dalle milestone 1 e 2):
 trasformare la stringa foto in una immagine effettiva
 BONUS 2 
-(solo se non sei giá fuso):
-organizzare i singoli membri in card/schede */
+organizzare i singoli membri in card/schede 
+*/
+
 
 // selezionare l'elemento della dom dove voglio stampare le informazioni
 const personElement = document.querySelector(".row")
@@ -64,16 +63,18 @@ for (let i = 0; i < team.length; i++) {
 
     const personCard = `
     <div class="col">
+    <div class="cards">
     <div class="card-top">
-        <img src="./assets/img/${person.image}">
+        <img src="./assets/img/${person.image}" width="355px">
     </div>
-    <div class="card-text text-center m-4">
+    <div class="card-text text-center p-4">
         <h4>${person.name}</h4>
         <h6>${person.role}</h6>
     </div>
 </div>
+    </div>
     `;
-    //console.log(personCard);
+    console.log(personCard);
 
     personElement.insertAdjacentHTML("beforeend", personCard);
 
